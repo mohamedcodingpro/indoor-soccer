@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tzaneen KickOff Arena - Indoor Soccer Booking</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Tzaneen KickOff <span>Arena</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#fields">Fields</a></li>
+                <li><a href="#booking">Book Now</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Experience <span>Premium</span> Indoor Soccer</h1>
+                <p>Book your perfect game at our state-of-the-art facilities</p>
+                <a href="#booking" class="btn-primary">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>Easy Booking</h3>
+                    <p>Simple online reservation system available 24/7</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-star"></i>
+                    <h3>Premium Fields</h3>
+                    <p>High-quality turf with professional maintenance</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-users"></i>
+                    <h3>League Play</h3>
+                    <p>Join competitive or recreational leagues</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-concierge-bell"></i>
+                    <h3>Full Amenities</h3>
+                    <p>Changing rooms, showers, and equipment rental</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fields Section -->
+    <section id="fields" class="fields">
+        <div class="container">
+            <h2 class="section-title">Our Fields</h2>
+            <div class="fields-grid">
+                <div class="field-card">
+                    <div class="field-image" style="background-image: url('https://images.unsplash.com/photo-1574629810360-7efbbe195018')"></div>
+                    <h3>Field 1 - Professional</h3>
+                    <p>Full-size field with FIFA-approved turf</p>
+                    <span class="field-size">40m x 20m</span>
+                </div>
+                <div class="field-card">
+                    <div class="field-image" style="background-image: url('https://images.unsplash.com/photo-1540747913346-19e32dc3e97e')"></div>
+                    <h3>Field 2 - Recreational</h3>
+                    <p>Perfect for casual games and training</p>
+                    <span class="field-size">35m x 18m</span>
+                </div>
+                <div class="field-card">
+                    <div class="field-image" style="background-image: url('https://images.unsplash.com/photo-1575361204480-aadea25e6e68')"></div>
+                    <h3>Field 3 - Youth</h3>
+                    <p>Smaller field ideal for youth teams</p>
+                    <span class="field-size">30m x 15m</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2 class="section-title">Book Your Game</h2>
+            <div class="booking-container">
+                <div class="booking-info">
+                    <h3>Ready to play?</h3>
+                    <p>Fill out the form to reserve your time slot. Our fields book up quickly, especially on weekends!</p>
+                    <div class="pricing">
+                        <h4>Pricing:</h4>
+                        <ul>
+                            <li>Weekdays: R500/hour</li>
+                            <li>Weekends: R700/hour</li>
+                            <li>League Discounts Available</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="booking-form">
+                    <h3>Reservation Form</h3>
+                    <form id="bookForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="field">Field</label>
+                            <select id="field" required>
+                                <option value="">Select a field</option>
+                                <option value="field1">Field 1 - Professional</option>
+                                <option value="field2">Field 2 - Recreational</option>
+                                <option value="field3">Field 3 - Youth</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Time Slot</label>
+                            <select id="time" required>
+                                <option value="">Select time</option>
+                                <option value="09:00-10:30">9:00 AM - 10:30 AM</option>
+                                <option value="10:30-12:00">10:30 AM - 12:00 PM</option>
+                                <!-- Add more time slots -->
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-primary">Book Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Players Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote">"The best indoor facility in town! The fields are always in perfect condition."</div>
+                    <div class="author">- Alex M., Team Captain</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote">"Super easy booking system. We play here every Thursday night."</div>
+                    <div class="author">- Sarah K., Recreational Player</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote">"Great for our youth team practices. The staff is very accommodating."</div>
+                    <div class="author">- Coach David R.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Soccer Way, Sports City</p>
+                    <p><i class="fas fa-phone"></i> +27 621487899</p>
+                    <p><i class="fas fa-envelope"></i> info@kTzaneenickoffarena.com</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo"> Tzaneen KickOff <span>Arena</span></a>
+                    <p>Premium indoor soccer facilities for players of all levels.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#booking">Book Now</a></li>
+                        <li><a href="#fields">Fields</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-hours">
+                    <h4>Opening Hours</h4>
+                    <ul>
+                        <li>Monday-Friday: 8AM - 11PM</li>
+                        <li>Saturday-Sunday: 7AM - Midnight</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tzaneen KickOff Arena. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+</html>
